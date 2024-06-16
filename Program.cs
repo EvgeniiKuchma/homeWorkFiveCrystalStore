@@ -11,13 +11,13 @@ namespace homeWorkFiveCrystalStore
         static void Main(string[] args)
         {
             Console.Write("Укажите сколько золота в вашем кошельке?: ");
-            int goldInWallet = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine($"В вашем кошельке {goldInWallet} золота.");
-            int costOneCrystal = 5;
+            int golds = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"В вашем кошельке {golds} золота.");
+            int crystallPrice = 5;
             Console.Write("Сколько кристаллов вы хотите купить?: ");
-            int numberOfCrystal = Convert.ToInt32(Console.ReadLine());
-            goldInWallet -= numberOfCrystal * costOneCrystal;
-            Console.WriteLine($"Вы купили {numberOfCrystal} кристалов, у вас осталось {goldInWallet} золота.");
+            int crystalls = Convert.ToInt32(Console.ReadLine());
+            golds -= crystalls * crystallPrice;
+            Console.WriteLine($"Вы купили {crystalls} кристалов, у вас осталось {golds} золота.");
         }
     }
 }
